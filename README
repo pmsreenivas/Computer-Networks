@@ -1,0 +1,20 @@
+a. Prithvi Mothi Sreenivasan
+
+b. 3060464798
+
+c. This Project invloves the communication between 5 different entities, each with their own roles. The client inputs data about various links, this is relayed to server A via the AWS server. The client also asks to compute the delay for a particular link with some additional parameters, this request is relayed via the AWS to server A which checks whether the link exists. If so server B computes the values and relays the answers to the client via the AWS. The monitor keeps recording all sorts of transactions that take place.
+
+d. client.c - code for the client
+   monitor.c - code for the monitor
+   aws.c - code for the aws server
+   serverA.c - code for the Backend server A
+   serverB.c - code for the Backend server B
+   header.h - common header file for all code files
+   makefile - code that creates the executables and helps in running each code
+   README - description of the project
+
+e. Messages between the client and the AWS server and the monitor and the AWS server are exchanged using TCP. Messages between the Backend server A and the AWS and the Backend server B and the AWS are exchanged using UDP.
+
+g. none
+
+h. Code from Beej's tutorial have been used in all code files. They have been marked using inline comments.
